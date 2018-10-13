@@ -1,2 +1,2 @@
 # go-simple-rabbitmq-server-client
-Simple Golang template for a producer and consumer in with rabbitmq and tracking job statuses in redis
+Simple Golang template for a producer and consumer in with rabbitmq and tracking job statuses in redis following [this](https://www.rabbitmq.com/tutorials/tutorial-one-go.html)
