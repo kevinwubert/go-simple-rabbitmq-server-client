@@ -1,8 +1,15 @@
 package consumer
 
-import "fmt"
+import (
+	"github.com/kevinwubert/go-simple-rabbitmq-server-client/pkg/rabbitmq"
+)
 
 func Main() error {
-	fmt.Println("Hello consumer!")
+	rabbitMqClient, err := rabbitmq.New()
+	if err != nil {
+		return err
+	}
+
+	rabbitMqClient.ConsumeMessage()
 	return nil
 }
