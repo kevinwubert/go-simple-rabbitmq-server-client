@@ -13,5 +13,10 @@ devtools:
 deps:
 	dep ensure --vendor-only
 
+rabbitmq:
+	sudo apt-get -y update
+	sudo apt-get -y install erlang-nox
+	sudo apt-get -y install rabbitmq-server
+
 clean:
 	rm -rf bin
